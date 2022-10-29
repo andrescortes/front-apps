@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class DataServices {\n  constructor(httpClient) {\n    this.httpClient = httpClient;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
