@@ -1,0 +1,17 @@
+<form class="item">
+  <input
+    type="text"
+    name="name"
+    id="name"
+    placeholder="Name"
+    [(ngModel)]="nameInput"
+  />
+  <input
+    type="text"
+    name="lastname"
+    id="lastname"
+    placeholder="Last name"
+    [(ngModel)]="lastNameInput"
+  />
+  <button type="submit" (click)="createPerson()">+</button>
+</form>

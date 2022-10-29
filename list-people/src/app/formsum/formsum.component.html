@@ -1,0 +1,28 @@
+<form class="row g-3">
+  <div class="col-auto">
+    <label class="visually-hidden" for="numberA">Number A</label>
+    <input
+      type="number"
+      name="numberA"
+      id="numberA"
+      placeholder="Number A"
+      class="form-control"
+      [(ngModel)]="numberA"
+    />
+  </div>
+  <div class="col-auto">
+    <label class="visually-hidden" for="numberB">Number B</label>
+    <input
+      type="number"
+      name="numberB"
+      id="numberB"
+      placeholder="Number B"
+      class="form-control"
+      [(ngModel)]="numberB"
+    />
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary form-control-sm" (click)="sumValues()">Sum
+    </button>
+  </div>
+</form>

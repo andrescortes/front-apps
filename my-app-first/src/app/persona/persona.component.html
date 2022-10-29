@@ -1,0 +1,12 @@
+<p>
+  Name: {{ name }}<br/>
+  Last Name: {{ lastName }}<br/>
+  Age: {{ getAge() }}<br/>
+
+</p>
+
+<div (keyup)="0">
+  <label>Repeat:</label>
+  <input #entry/>
+  <p>{{ entry.value }}</p>
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>{{title}}</h1>
+  <form>
+    <div class="form-group">
+      <label class="form-label">Number A</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Write number A"
+        [(ngModel)]="numberA" name="numberA"
+      />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Number B</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Write number B"
+        [(ngModel)]="numberB" name="numberB"
+      />
+    </div>
+    <button
+      type="submit"
+      class="btn btn-primary"
+      (click)="sum()"
+    >Sum
+    </button>
+  </form>
+  <p>Number A: {{numberA}}</p>
+  <p>Number B: {{numberB}}</p>
+  <p>Result: {{result}}</p>
+</div>

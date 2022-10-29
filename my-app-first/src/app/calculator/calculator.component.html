@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3>Calculator</h3>
+      <label>Number A</label>
+      <input type="number" name="numberA" id="numberA" class="form-control" [(ngModel)]="numberA">
+      <label>Number B</label>
+      <input type="number" name="numberB" id="numberB" class="form-control" [(ngModel)]="numberB">
+      <label class="form-label">Operation</label>
+      <button class="btn-primary btn" (click)="sumValues($event)">Plus</button>
+      <p>Result: {{result}}</p>
+
+    </div>
+  </div>
+</div>

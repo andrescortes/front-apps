@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col"></div>
+    <h1>List of persons</h1>
+    <button
+      class="btn btn-primary "
+      [disabled]=noClick
+      (click)="addPerson()"
+      style="width: 150px;"
+    >
+      Add Person
+    </button>
+    <p *ngIf="show; else noPerson">{{message}} with title {{title}}</p>
+    <ng-template #noPerson>
+      <p>{{message2}}</p>
+    </ng-template>
+    <app-persona></app-persona>
+
+    <label>People Title</label>
+    <!--(input)="updateTitle($event)" binding function-->
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="title"
+    />
+    <p>Title: {{title}}</p>
+  </div>
+</div>
+<app-calculator></app-calculator>
+
+
